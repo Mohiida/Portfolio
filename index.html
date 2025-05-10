@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+
+}
+
+.container { 
+    width: 100vw; 
+    max-width: 100%;
+    background-color: transparent; 
+}
+
+.section {
+    width: 100%; 
+    display: block;
+    padding: 20px;
+}
+   
+
+header {
+
+    padding: 20px 0;
+    text-align: center;
+}
+
+.profile img {
+    width: 100px;
+    height: 100px;
+    border-radius: 0%;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+/* 📌 SECTION QISMLAR UCHUN */
+section {
+    text-align: center;
+    padding: 40px 15px;
+}
+
+section img {
+    width: 200px;
+    border-radius: 8px;
+    margin-top: 15px;
+}
+
+/* 📱📟 RESPONSIVE MEDIA QUERIES */
+
+/* 📱 Telefon (480px gacha) */
+@media (max-width: 480px) {
+    .container {
+        width: 90%;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    section img {
+        width: 150px;
+    }
+
+    /* Header va matn kichikroq bo‘lishi uchun */
+    header {
+        padding: 8px;
+    }
+
+    .profile img {
+        width: 80px;
+        height: 80px;
+    }
+}
+
+/* 📱📟 Planshet (481px - 1024px) */
+@media (min-width: 481px) and (max-width: 1024px) {
+    .container {
+        width: 95%;
+    }
+
+    section img {
+        width: 180px;
+    }
+
+    /* Header biroz moslashishi uchun */
+    header {
+        padding: 15px;
+    }
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+/* Header qismi */
+header {
+
+    padding: 20px 0;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Header konteyner */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Profil qismi */
+.profile {
+    display: flex;
+    align-items: center;
+}
+
+.profile img {
+    width: 105px;
+    height: 130px;
+    border-radius: 0%;
+    border: 3px solid black;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.profile .info {
+    margin-left: 15px;
+    color: black;
+}
+
+.profile h1 {
+    margin: 0;
+    font-size: 22px;
+}
+
+.profile p {
+    margin: 0;
+    font-size: 14px;
+    opacity: 0.9;
+}
+
+/* Navigatsiya */
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 10px 15px;
+    transition: 0.3s;
+    border-radius: 5px;
+}
+
+nav ul li a:hover {
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0px 2px 10px rgba(255, 255, 255, 0.3);
+}
+#resume {
+    
+    padding: 60px 0;
+    text-align: center;
+}
+
+#resume h2 {
+    font-size: 32px;
+    margin-bottom: 30px;
+    color: #823939;
+}
+
+/* Ta'lim va Tajriba qismlari */
+.resume-content {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.education, .experience {
+    width: 45%;
+    text-align: left;
+}
+
+.education h3, .experience h3 {
+    font-size: 24px;
+    color: #ff7e5f;
+    margin-bottom: 15px;
+}
+body {
+    
+    color: #333;
+}
+
+.container {
+    width: 80%;
+    margin: 50px auto;
+}
+
+.about {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    padding: 50px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.about-content {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.profile-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 0%;
+    object-fit: cover;
+    border: 3px solid black;
+}
+
+.text {
+    max-width: 500px;
+}
+
+h2 {
+    font-size: 28px;
+    color: #ff6b6b;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #555;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    background: #ff6b6b;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #e05252;
+}
+/* Kartalar */
+.card {
+    background: rgb(244, 244, 190);
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+.card span {
+    display: block;
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 5px;
+}
+
+.card h4 {
+    font-size: 18px;
+    color: #333;
+    margin: 5px 0;
+}
+
+.card p {
+    font-size: 14px;
+    color: #777;
+}
+
+    
+
+.btn:hover {
+    background: #e05252;
+}
+#portfolio {
+            padding: 50px 20px;
+            background: linear-gradient(135deg, #c7ebf3, #f2f2f2);
+    
+        }
+        .projects {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            
+    
+        }
+        .project {
+            background-color: rgb(118, 186, 188);
+    
+            border-radius: 10px;
+            padding: 20px;
+            width: 300px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+            transition: 0.3s;
+        }
+        .project:hover {
+            transform: translateY(-5px);
+        }
+        .project img {
+            width: 100%;
+            border-radius: 10px;
+        }
+        .project h3 {
+            margin: 10px 0;
+        }
+        .project a {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 10px 15px;
+            color: white;
+            background: linear-gradient(135deg, #c7ebf3, #f2f2f2);
+    
+            text-decoration: none;
+            border-radius: 5px;
+            transition: 0.3s;
+        }
+        .project a:hover {
+            background: #0056b3;
+        }
+        body {
+        font-family: Arial, sans-serif;
+    }
+
+    #contact {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        background: linear-gradient(135deg, #c7ebf3, #f2f2f2);
+    }
+
+    .contact-container {
+        width: 90%;
+        max-width: 500px;
+        text-align: center;
+        background-color: #7db7f5;
+        padding: 40px;
+        border-radius: 10px;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    h2 {
+        margin-bottom: 10px;
+    }
+
+    p {
+        font-size: 16px;
+        color: #555;
+    }
+
+    .contact-form {
+        margin-top: 20px;
+    }
+
+    .input-group {
+        position: relative;
+        margin-bottom: 20px;
+    }
+
+    input, textarea {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #c24343;
+        border-radius: 5px;
+        outline: none;
+        transition: 0.3s;
+        font-size: 16px;
+    }
+
+   
+
+    label {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        color: white;
+        font-size: 14px;
+        transition: 0.3s;
+    }
+
+    input:focus + label, textarea:focus + label,
+    input:not(:placeholder-shown) + label,
+    textarea:not(:placeholder-shown) + label {
+        top: -12px;
+        left: 5px;
+        font-size: 12px;
+        color: #007bff;
+        background: white;
+        padding: 2px 5px;
+    }
+
+    button {
+        width: 100%;
+        padding: 10px;
+        border: none;
+        
+        color: white;
+        font-size: 16px;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: 0.3s;
+    }
+
+    button:hover {
+        background: #042e5b;
+    }
+    #portfolio {
+    text-align: center;
+    padding: 50px 20px;
+    background: white;
+}
+
+.portfolio-container {
+    max-width: 1100px;
+    margin: auto;
+}
+
+h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+p {
+    color: #666;
+    font-size: 16px;
+    margin-bottom: 30px;
+}
+
+
+    </style>
+</head>
+<body style=" background: linear-gradient(135deg, #c7ebf3, #f2f2f2);
+">
+       <header>
+        <div class="container">
+            <div class="profile">
+                <img src="images/rasm2.jpg" alt="Profile Picture">
+                <div class="info">
+                    <h1>Mohida</h1>
+                    <p>Web Developer & Designer and</p>
+                    <p> Mobil Developer</p>
+                </div>
+            </div>
+            
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Resume</a></li>
+                    <li><a href="#">Work</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section class="about">
+        <div class="container">
+            <div class="about-content">
+                <img src="images/rasm3.jpg" alt="Profile Picture" class="profile-img">
+                
+                <div class="text">
+             
+                    <h2>About Me</h2>
+                    <p>Hi, I'm Mohida, a passionate web developer and future trader. I love coding, designing, and building creative projects. Let's build something amazing together!💻 Web programming – I know the basics of HTML, CSS, and JavaScript. I am developing in the front-end direction and aim to become a strong programmer in the future.  am interested in creating web applications and interactive platforms and I am constantly expanding my knowledge in this area It is important that applications are not only functional, but also beautiful and intuitive . UI/UX design is necessary to improve the user experience Design and Creative Development – ​​I have experience in creating visual designs using Canva and other tools. I enjoy creating beautiful, intuitive, and engaging interfaces.</p>
+                    <a href="resume.html" class="btn">View Resume</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="resume">
+        <div class="container">
+            <h2>Resume</h2>
+            
+            <div class="resume-content">
+                <!-- Ta'lim bo'limi -->
+                <div class="education">
+                    <h3>Education</h3>
+                    <div class="card">
+                        <span>2023-2025</span>
+                        <h4>Web Development</h4>
+                        <p>IT Park, Uzbekistan</p>
+                        <p>Blackroom.uz</p>
+                    </div>
+                    <div class="card">
+                        <span>2025-2029</span>
+                        <h4>Computer Science</h4>
+                        <p>Al-Xorazmiy University</p>
+                    </div>
+                </div>
+    
+                <!-- Tajriba bo'limi -->
+                <div class="experience">
+                    <h3>Experience</h3>
+                    <div class="card">
+                        <span>2024 - Present</span>
+                        <h4>Freelance Web Developer</h4>
+                        <p>Upwork, Fiverr, Admob</p>
+                    </div>
+                    <div class="card">
+                        <span>2026 - Future</span>
+                        <h4>Software Engineer</h4>
+                        <p>Google / Microsoft</p>
+                         <p>Treder / Programmist</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <h1>Welcome to My Portfolio</h1>
+
+    <section id="portfolio" style=" background: linear-gradient(135deg, #c7ebf3, #f2f2f2);
+    ">
+        <h2>Portfolio</h2>
+        <div class="projects">
+            <div class="project">
+                <img src="images/Снимок экрана (116).png" alt="Project 1">
+                <h3>My First Project</h3>
+                <p>Bu loyihamda HTML, CSS va JavaScript ishlatilgan.</p>
+                <a href="test.html" target="_blank">View Project</a>
+            </div>
+
+            <div class="project">
+                <img src="images/Снимок экрана (124).png" alt="Project 2">
+                <h3>Second Awesome Project</h3>
+                <p>Bootstrap va SCSS yordamida qilingan ajoyib dizayn.</p>
+                <a href="restaran.html" target="_blank">View Project</a>
+            </div>
+        </div>
+    </section>
+    <section id="contact">
+        <div class="contact-container">
+            <h2>Contact Me</h2>
+            <p>Do you have any questions or want to collaborate? Feel free to reach out!</p>
+    
+            <div class="contact-form">
+                <form action="https://formspree.io/f/your-email" method="POST">
+                    <div class="input-group">
+                        <input type="text" name="name" required>
+                        <label>Your Name</label>
+                    </div>
+    
+                    <div class="input-group">
+                        <input type="email" name="email" required>
+                        <label>Your Email</label>
+                    </div>
+    
+                    <div class="input-group">
+                        <textarea name="message" required></textarea>
+                        <label>Your Message</label>
+                    </div>
+    
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    
+    
+              
+    
+</style>
+</body>
+</html>

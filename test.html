@@ -1,0 +1,259 @@
+<!-- test_page.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Page</title>
+    <style>
+         {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            flex-direction: column;
+            background-color: #f9f9f9;
+        }
+
+        .test-container {
+            width: 80%;
+            max-width: 600px;
+            margin: 20px;
+            padding: 20px;
+            border: 2px solid #ddd;
+            border-radius: 10px;
+            background-color: white;
+        }
+
+        .question {
+            margin: 20px 0;
+        }
+
+        .start-test-btn, .submit-btn {
+            background-color: green;
+            color: white;
+            padding: 15px 30px;
+            font-size: 20px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+
+        .submit-btn {
+            background-color: blue;
+        }
+
+        .progress-bar {
+            width: 80%;
+            height: 30px;
+            background-color: lightgray;
+            border-radius: 15px;
+            margin-bottom: 20px;
+            position: relative;
+        }
+
+        .progress {
+            height: 100%;
+            background-color: green;
+            border-radius: 15px;
+            width: 0%; /* Boshlang'ich foiz 0% */
+            transition: width 1s ease;
+        }
+
+        .percentage {
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            color: white;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    <h1>IT bo'yicha testlarga xush kelebsiz!</h1>
+    <div class="test-container">
+        <div class="progress-bar">
+            <div class="progress" id="progress">
+                <div class="percentage" id="percentage">0%</div>
+            </div>
+        </div>
+
+        <h1>Testni boshlash</h1>
+        <form id="testForm">
+            <div class="question">
+                <h3>Savol 1: HTML nima?</h3>
+                <input type="radio" name="question1" value="A"> A) Hyper Text Markup Language<br>
+                <input type="radio" name="question1" value="B"> B) High-Tech Markup Language<br>
+                <input type="radio" name="question1" value="C"> C) Hyper Text Machine Language<br>
+            </div>
+
+            <div class="question">
+                <h3>Savol 2: CSS nima?</h3>
+                <input type="radio" name="question2" value="A"> A) Cascading Style Sheets<br>
+                <input type="radio" name="question2" value="B"> B) Common Style Sheets<br>
+                <input type="radio" name="question2" value="C"> C) Creative Style Sheets<br>
+            </div>
+            <div class="question">
+                <h3>Savol 3: JavaScript nima?</h3>
+                <input type="radio" name="question3" value="A"> A) Programming Language<br>
+                <input type="radio" name="question3" value="B"> B) Style Sheet Language<br>
+                <input type="radio" name="question3" value="C"> C) Database Language<br>
+            </div>
+            <div class="question">
+                <h3>Savol 4: Veb-sahifani brauzerda qanday ko'rish mumkin?</h3>
+                <input type="radio" name="question4" value="A"> A) Faylni ochish<br>
+                <input type="radio" name="question4" value="B"> B) Sahifa URL manzilini kiriting<br>
+                <input type="radio" name="question4" value="C"> C) Sahifani serverga yuborish<br>
+            </div>
+            <div class="question">
+                <h3>Savol 5: HTMLdagi div tegining vazifasi nima?</h3>
+                <input type="radio" name="question5" value="A"> A) Matnni markazga joylashtirish<br>
+                <input type="radio" name="question5" value="B"> B) Yangi sahifa yaratish<br>
+                <input type="radio" name="question5" value="C"> C) Kichik bo'limlarni tashkil qilish<br>
+            </div>
+            <div class="question">
+                <h3>Savol 6:CSSda qanday xususiyatlar yordamida matnni qalin qilib ko'rsatish mumkin? </h3>
+                <input type="radio" name="question6" value="A"> A) Font-size<br>
+                <input type="radio" name="question6" value="B"> B) Font-weigh<br>
+                <input type="radio" name="question6" value="C"> C) Text-align<br>
+            </div>
+            <div class="question">
+                <h3>Savol 7:JavaScriptda o'zgaruvchini qanday e'lon qilish mumkin? </h3>
+                <input type="radio" name="question7" value="A"> A)Var <br>
+                <input type="radio" name="question7" value="B"> B)Set <br>
+                <input type="radio" name="question7" value="C"> C)Create <br>
+            </div> 
+            <div class="question">
+                <h3>Savol 8:CSSda rangni qanday o'rnatish mumkin? </h3>
+                <input type="radio" name="question8" value="A"> A)  color: red;<br>
+                <input type="radio" name="question8" value="B"> B) text-color: blue;<br>
+                <input type="radio" name="question8" value="C"> C) background: green;<br>
+            </div> 
+            <div class="question">
+                <h3>Savol 9:HTMLda video joylash uchun qaysi teg ishlatiladi?</h3>
+                <input type="radio" name="question9" value="A"> A) Audio tegi <br>
+                <input type="radio" name="question9" value="B"> B) Video tegi<br>
+                <input type="radio" name="question9" value="C"> C) Iframe tegi<br>
+            </div> 
+            <div class="question">
+                <h3>Savol 10:JavaScriptda funksiyani chaqirish uchun qanday yoziladi?</h3>
+                <input type="radio" name="question10" value="A"> A) Function_name() <br>
+                <input type="radio" name="question10" value="B"> B) Call_function()<br>
+                <input type="radio" name="question10" value="C"> C) Invoke_function()<br>
+            </div> 
+            <div class="question">
+                <h3>Savol 11:Veb-saytning mobil versiyasini qanday yaratish mumkin?</h3>
+                <input type="radio" name="question11" value="A"> A) CSS media queries yordamida <br>
+                <input type="radio" name="question11" value="B"> B) JavaScript yordamida<br>
+                <input type="radio" name="question11" value="C"> C) HTML yordamida<br>
+            </div> 
+            <div class="question">
+                <h3>Savol 12:HTMLda qaysi teg matnni paragraflar sifatida ajratadi?</h3>
+                <input type="radio" name="question12" value="A"> A) Div tegi <br>
+                <input type="radio" name="question12" value="B"> B) P tegi<br>
+                <input type="radio" name="question12" value="C"> C) Span tegi<br>
+            </div>
+            <div class="question">
+                <h3>Savol 13:JavaScriptda o'zgaruvchi qiymatini qanday o'zgartirish mumkin? </h3>
+                <input type="radio" name="question13" value="A"> A) var = new_value; <br>
+                <input type="radio" name="question13" value="B"> B) new_value = var;<br>
+                <input type="radio" name="question13" value="C"> C) var = new_value<br>
+            </div>
+            <div class="question">
+                <h3>Savol 14:CSSda sahifaning orqa fon rangini o'zgartirish uchun qaysi xususiyat ishlatiladi? </h3>
+                <input type="radio" name="question14" value="A"> A) Background-color<br>
+                <input type="radio" name="question14" value="B"> B) Color<br>
+                <input type="radio" name="question14" value="C"> C) Background-image<br>
+            </div>
+            <div class="question">
+                <h3>Savol 15:HTMLda link qo'shish uchun qaysi teg ishlatiladi?</h3>
+                <input type="radio" name="question15" value="A"> A) A tegi<br>
+                <input type="radio" name="question15" value="B"> B) Href tegi<br>
+                <input type="radio" name="question15" value="C"> C) Link tegi<br>
+            </div>
+            <br>
+            <button type="button" class="submit-btn" onclick="submitTest()">Testni yuborish</button>
+        </form>
+    </div>
+    <script>
+        let totalQuestions = 15;  // Savollar soni
+        let correctAnswers = 0;  // To'g'ri javoblar
+        let progressBar = document.getElementById("progress");
+        let percentage = document.getElementById("percentage");
+
+        // Testni yuborish va foizni hisoblash
+        function submitTest() {
+            let answers1 = document.getElementsByName("question1");
+    let answers2 = document.getElementsByName("question2");
+    let answers3 = document.getElementsByName("question3");
+    let answers4 = document.getElementsByName("question4");
+    let answers5 = document.getElementsByName("question5");
+    let answers6 = document.getElementsByName("question6");
+    let answers7 = document.getElementsByName("question7");
+    let answers8 = document.getElementsByName("question8");
+    let answers9 = document.getElementsByName("question9");
+    let answers10 = document.getElementsByName("question10");
+    let answers11 = document.getElementsByName("question11");
+    let answers12 = document.getElementsByName("question12");
+    let answers13 = document.getElementsByName("question13");
+    let answers14 = document.getElementsByName("question14");
+    let answers15 = document.getElementsByName("question15");
+
+            // To'g'ri javoblarni tekshirish
+            if (document.querySelector('input[name="question1"]:checked')?.value === "A") {
+                correctAnswers++;
+            }
+            if (document.querySelector('input[name="question2"]:checked')?.value === "A") {
+                correctAnswers++;
+            }
+            if (document.querySelector('input[name="question3"]:checked')?.value === "A") {
+    correctAnswers++;
+}
+    if (document.querySelector('input[name="question4"]:checked')?.value === "B") {
+        correctAnswers++;
+    }
+    if (document.querySelector('input[name="question5"]:checked')?.value === "C") {
+    correctAnswers++;}
+    if (document.querySelector('input[name="question6"]:checked')?.value === "B") {
+    correctAnswers++;}
+    if (document.querySelector('input[name="question7"]:checked')?.value === "A") {
+    correctAnswers++;}
+    if (document.querySelector('input[name="question8"]:checked')?.value === "A") {
+    correctAnswers++;}
+    if (document.querySelector('input[name="question9"]:checked')?.value === "B") {
+    correctAnswers++;}
+    if (document.querySelector('input[name="question10"]:checked')?.value === "A") {
+    correctAnswers++;}
+    if (document.querySelector('input[name="question11"]:checked')?.value === "A") {
+    correctAnswers++;}
+    if (document.querySelector('input[name="question12"]:checked')?.value === "B") {
+    correctAnswers++;}
+    if (document.querySelector('input[name="question13"]:checked')?.value === "A") {
+    correctAnswers++;}
+    if (document.querySelector('input[name="question14"]:checked')?.value === "A") {
+    correctAnswers++;}
+    if (document.querySelector('input[name="question15"]:checked')?.value === "A") {
+    correctAnswers++;}
+         
+                
+           
+            // Foizni hisoblash
+            let percentageScore = (correctAnswers / totalQuestions) * 100;
+            
+            // Progress barni yangilash
+            progressBar.style.width = percentageScore + "%";
+            percentage.innerHTML = Math.round(percentageScore) + "%";
+
+            // Testni yakunlashdan keyin holatni ko'rsatish
+            alert("Test yakunlandi! Sizning natijangiz: " + Math.round(percentageScore) + "%");
+        }
+    </script>
+   <figcaption style="text-align: center;color: rgb(36, 13, 210); font-size: 230%;"><b>Sertifikatingizni olish uchun directga murojat qiling! <a style="text-align: center; color: rgb(210, 13, 13); font-size: 80%;" href="https://www.instagram.com/_odilbekovva_/profilecard/?igsh=MTg3ZHR6dHdlYjRzZg==" target="_blank">https://www.instagram.com/_odilbekovva_/</a></figcaption>
+   </figcaption></b>
+  <br><br><br><br>
+    
+            
+</body>
+</html>

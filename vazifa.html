@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mohida Odilbekova</title>
+    <style>
+        body {
+            font-family:Georgia, 'Times New Roman', Times, serif;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            display: flex;
+            align-items: center;
+            padding: 20px;
+        }
+        .content {
+            padding: 10px;
+        }
+       .container {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+       }
+       .buttons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+       .container p {
+        margin-right: 15px;
+       }
+       .container img {
+        order:2;
+        margin-right: 15px;
+       }
+       table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+   
+    
+   
+        
+          /* Hero bo'lim */
+.hero-section {
+  text-align: center;
+  padding: 50px 20px;
+  background-color: #f9f9f9;
+}
+
+/* Matn bo'limi */
+.text-content {
+  margin-bottom: 30px;
+}
+.text-content h1 {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.text-content .subtitle {
+  font-size: 18px;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.btn {
+  background-color: #ff5c5c;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.btn-secondary {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Karta bo'limi */
+.cards {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 40px;
+}
+
+.card {
+  background-color: white;
+  padding: 20px;
+  width: 250px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.card .icon {
+  font-size: 40px;
+  margin-bottom: 15px;
+  color: #ff5c5c;
+}
+
+.card h3 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.card p {
+  font-size: 14px;
+  color: #666;
+}
+{
+      font-family: Arial, sans-serif;
+      background-color: #f2f8f7;
+      margin: 0;
+      padding: 0;
+    }
+    .stats {
+      display: flex;
+      justify-content: space-around;
+      padding: 20px 0;
+      background-color: rgb(31, 185, 185)
+    }
+    .stats-item {
+      text-align: center;
+    }
+    .stats-item h2 {
+      color: red;
+      font-size: 2rem;
+      margin: 0;
+    }
+    .stats-item p {
+      margin: 5px 0 0;
+      font-size: 1rem;
+      color: #333;
+    }
+    .expert-container {
+    display: flex; /* Yonma-yon joylashadi */
+    justify-content: space-between; /* Bo‘shliq yaratadi */
+    align-items: center; /* Rasm va matn balandligini tenglaydi */
+}
+
+.expert-text {
+    max-width: 50%; /* Matn uchun ajratilgan joy */
+}
+
+.expert-image img {
+    max-width: 100%; /* Rasm hajmi to‘liq joyga moslashadi */
+    height: auto; /* Proportsiya saqlanadi */
+}
+    
+    
+    .department {
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+      margin-top: 20px;
+      
+    }
+    .department-item {
+      background: #3473e8;
+      padding: 15px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      border-radius: 8px;
+      flex: 1;
+      text-align: center;
+    }
+    .department-image {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+      margin-bottom: 10px;
+    
+    }
+    .button {
+      display: inline-block;
+      margin: 25px 150px;
+      padding: 10px 15px;
+      background-color: #f72828;
+      color: white;
+      border: none;
+      border-radius: 50px;
+      text-decoration: none;
+      font-size: 2rem;
+      text-align: center;
+      
+    }
+    .button:hover {
+      background-color: #0056b3;
+    }
+    .onalar {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.ona {
+  background-color: rgb(31, 185, 185)
+  padding: 20px;
+  width: 250px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.ona.mohida {
+  font-size: 40px;
+  margin-bottom: 15px;
+  color: #0a0909;
+}
+
+.mohida h3 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.mohida p {
+  font-size: 14px;
+  color: #666;
+}
+
+.mahfuza {
+      display: flex;
+      justify-content: center; /* Barcha elementlarni markazlash */
+      gap: 80px; /* Rasm va matnlar orasidagi masofa */
+      margin-top: 20px;
+    }
+
+    .item {
+      display: flex;
+      align-items: center; /* Rasm va matnni vertikal markazlash */
+      gap: 10px; /* Rasm va matn orasidagi masofa */
+    }
+
+    .item img {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%; /* Aylana shakli */
+      object-fit: cover;
+    }
+
+    .item p {
+      font-size: 16px; /* Matn o'lchami */
+      margin: 0; /* Matn atrofidagi bo'sh joyni olib tashlash */
+      color: red;
+    }
+
+    .item p {
+      order: 1; /* Matnni o'ngga joylashtiradi */
+    }
+    .karomat {
+      display: flex; /* Yonma-yon joylashish */
+      gap: 20px; /* Rasmlar orasidagi masofa */
+      justify-content: center; /* Hammasini markazlash */
+    }
+
+    .sabi {
+      background: #fff; /* Oq fon */
+      border-radius: 10px; /* Yumshoq burchaklar */
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Yengil soyalar */
+      text-align: center; /* Matn markazlash */
+      width: 200px; /* Kartaning kengligi */
+      padding: 15px;
+    }
+
+    .sabi img {
+      width: 100%; /* Rasmni kartaga moslash */
+      border-radius: 10px; /* Yumshoq burchaklar */
+    }
+
+    .sabi h3 {
+      margin: 10px 0 5px; /* Matn oralig‘i */
+      font-size: 18px;
+    }
+
+    .sabi p {
+      margin: 0;
+      font-size: 14px;
+      color: #777;
+    }
+
+    .social-oti {
+      margin-top: 10px; /* Logotiplarga joy */
+    }
+
+    .social-oti img {
+      width: 20px; /* Logotip o‘lchami */
+      margin: 0 5px;
+    }
+    button:hover {
+  background-color: darkred;
+}
+
+input:focus {
+  border-color: #007BFF;
+  outline: none;
+}
+
+       table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+th, td {
+  border: 1px solid rgb(31, 185, 185)
+  padding: 8px;
+}
+
+th {
+  background-color: rgb(31, 185, 185)
+  font-weight: bold;
+}
+
+td {
+  color: #333;
+}
+.jasmina {
+            display: flex;
+            align-items: center;
+            padding: 20px;
+        }
+        .jassi {
+            padding: 10px;
+        }
+       .jasmina {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+       }
+       .social-mohi {
+      margin-top: 10px; /* Logotiplarga joy */
+      display: flex;
+        align-items: end;
+        justify-content: flex-end;
+    }
+
+    .social-mohi img {
+      width: 30px; /* Logotip o‘lchami */
+      margin: 5px;
+      
+    }
+    table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+th, td {
+  border: 1px solid rgb(31, 185, 185)
+  padding: 8px;
+}
+
+th {
+  background-color: rgb(31, 185, 185)
+  font-weight: bold;
+}
+    </style>
+</head>
+<body>
+ <div class="container">
+  <div class="content">
+    <h1>MedicalRecov</h1>
+  </div>
+  <div class="content">
+    <header style="font-size: 80%;">Home</header>
+  </div>
+  <div class="content">
+    <header style="font-size: 80%;">Product</header>
+  </div>
+  <div class="content">
+    <header style="font-size: 80%;">Pricing</header>
+  </div>
+  <div class="content">
+    <header style="font-size: 80%;">Contact</header>
+  </div>
+  <div class="buttons">
+    <button class="btn">Login</button>
+    <button class="btn-secondary">Join Us</button>
+  </div>
+ </div>
+        
+          
+    </div>
+    <h2 style="color: red; text-align: justify;">Join Us</h2>
+    
+    <div class="container">
+        <img src="images/doktor7.jpg" width="540" height="510">
+       
+        
+        <div class="hero-section">
+            <div class="text-content">
+              <h1>A Great Place to Receive Care</h1>
+              <p class="subtitle">
+                Medical Recover is most focused in helping you discover your most beautiful smile
+              </p>
+              <div class="buttons">
+                <button class="btn">Get Quote Now</button>
+                <button class="btn btn-secondary">Learn More</button>
+              </div>
+              
+            </div>
+            <div class="cards">
+              <div class="card">
+                <div class="icon">❤️</div>
+                <h3>Online Appointment</h3>
+                <p>The gradual accumulation of information about atomic and small-scale behaviour...</p>
+              </div>
+              <div class="card">
+                <div class="icon">🩺</div>
+                <h3>Emergency Case</h3>
+                <p>The gradual accumulation of information about atomic and small-scale behaviour...</p>
+              </div>
+              <div class="card">
+                <div class="icon">📋</div>
+                <h3>Cancer Care</h3>
+                <p>The gradual accumulation of information about atomic and small-scale behaviour...</p>
+              </div>
+            </div>
+          </div>
+    </div>
+</body>
+<body>
+   <!-- Statistics Section -->
+   <div class="stats">
+    <div class="stats-item">
+      <h2>15K</h2>
+      <p>Happy Customers</p>
+    </div>
+    <div class="stats-item">
+      <h2>150K</h2>
+      <p>Monthly Visitors</p>
+    </div>
+    <div class="stats-item">
+      <h2>15</h2>
+      <p>Countries Worldwide</p>
+    </div>
+    <div class="stats-item">
+      <h2>100+</h2>
+      <p>Top Partners</p>
+    </div>
+  </div>
+  <div class="expert-container">
+    <div class="expert-text">
+        <h1>Meet Our Experts</h1>
+        <main style="color: black; font-size: 90%;">Problemes trying to resolve the conflict between</main> <main style="color: black;font-size: 90s%;">the two major realms of classical physics: Newtonian mechanics.</main>
+</body>
+    </div>
+    <div class="expert-image">
+        <img src="images/doktor4.jpg" alt="Expert" width="320" height="300">
+    </div>
+  </div>
+  
+    
+  <body style="background-color: rgb(31, 185, 185);">
+  <!-- Our Department Section -->
+  <div class="section">
+    <h3 style="color: rgb(214, 19, 19);">Practice Advice</h3>
+    <h1>Our Department</h1>
+    <main style="color: black; font-size: 90%;">Problemes trying to resolve the conflict between</main> <main style="color: black;font-size: 90s%;">the two major realms of classical physics: Newtonian mechanics.</main>
+</body>
+    <div class="department">
+      <div class="department-item">
+        <img class="department-image" src="doktor1.jpg" alt="Department 1">
+        <figcaption style="color: rgb(182, 12, 12); font-size: 100%;">Painless proecudures</figcaption> <br>
+        <h3>Quick Examination</h3>
+        <aside style="color: black; font-size: 120%;">We focus on ergonomics and meeting you where you work. It's only a keystroke away.</aside><br>
+        <aside style="color: black;  font-size: 120%;">15 Sales</aside><br>
+        <aside style="color: rgb(32, 6, 77); font-size: 120%;">$16.48 $6.48</aside>
+      </div>
+      <div class="department-item">
+        <img class="department-image" src="images/doktor2.jpg">
+        <figcaption style="color: rgb(182, 12, 12); font-size: 100%;">Painless proecudures</figcaption> <br>
+        <h3>Online Appointment</h3>
+        <aside style="color: black; font-size: 120%;">We focus on ergonomics and meeting you where you work. It's only a keystroke away.</aside><br>
+        <aside style="color: black;  font-size: 120%;">15 Sales</aside><br>
+        <aside style="color: rgb(32, 6, 77); font-size: 120%;">$16.48 $6.48</aside>
+        
+      </div>
+      <div class="department-item">
+        <img class="department-image" src="images/doktor3.jpg" alt="Department 3">
+        <figcaption style="color: rgb(182, 12, 12); font-size: 100%;">Painless proecudures</figcaption> <br>
+        <h3>Emergency Case</h3>
+        <aside style="color: black; font-size: 120%;">We focus on ergonomics and meeting you where you work. It's only a keystroke away.</aside><br>
+        <aside style="color: black;  font-size: 120%;">15 Sales</aside><br>
+        <aside style="color: rgb(32, 6, 77); font-size: 120%;">$16.48 $6.48</aside>
+      </div>
+    </div>
+  </div>
+</body>
+  <!-- Sign Up & Log In Buttons -->
+  <div class="section">
+    <a href="#" class="button">Learn more</a>
+    <a href="#" class="button">Learn more</a>
+    <a href="#" class="button">Learn more</a>
+  </div>
+  <header style="color: red; font-size: 130%;">Practive Advice</header><h1>Leading Medicine</h1> <main style="color: black; font-size: 90%;">Problemes trying to resolve the conflict between</main> <main style="color: black;font-size: 90s%;">the two major realms of classical physics: Newtonian mechanics.</main>
+</body>
+</body>
+<div class="onalar">
+  <div class="ona">
+    <div class="mohida">⭐⭐⭐⭐⭐</div><br>
+    <main style="font-size: 120%;">Slate helps you see</main><main style="font-size: 120%;">how many more days</main><main style="font-size: 120%;">you need to work to</main><main style="font-size: 120%;">reach your financial</main><main style="font-size: 120%;">goal for the month </main><main style="font-size: 120%;">and year.</main>
+  </div>
+  <div class="ona">
+    <div class="mohida">⭐⭐⭐⭐⭐</div><br>
+    <main style="font-size: 120%;">Slate helps you see</main><main style="font-size: 120%;">how many more days</main><main style="font-size: 120%;">you need to work to</main><main style="font-size: 120%;">reach your financial</main><main style="font-size: 120%;">goal for the month </main><main style="font-size: 120%;">and year</main>
+  </div>
+  <div class="ona">
+    <div class="mohida">⭐⭐⭐⭐⭐</div><br>
+    <main style="font-size: 120%;">Slate helps you see</main><main style="font-size: 120%;">how many more days</main><main style="font-size: 120%;">you need to work to</main><main style="font-size: 120%;">reach your financial</main><main style="font-size: 120%;">goal for the month </main><main style="font-size: 120%;">and year</main>
+  </div>
+</div>
+</div>
+</div>
+</body>
+<div class="mahfuza">
+  <div class="item">
+    <img src="images/shifokor1.jpg" alt="Rasm 1">
+    <p>Regina Miles</p>
+  </div>
+  <div class="item">
+    <img src="images/shifokor2.jpg" alt="Rasm 2">
+    <p>John Doe</p>
+  </div>
+  <div class="item">
+    <img src="images/shifokor3.jpg" alt="Rasm 3">
+    <p>Emma Stone</p>
+  </div>
+</div>
+<header style="color: red; font-size: 130%;">Team</header><h1>Our Team</h1><main style="color: black; font-size: 90%;">Problemes trying to resolve the conflict between</main> <main style="color: black;font-size: 90s%;">the two major realms of classical physics: Newtonian mechanics.</main>
+<br><br>
+ 
+  <div class="karomat">
+    <div class="sabi">
+      <img src="images/ism2.jpg" alt="Doctor 2">
+      <h3>Julian Jameson</h3>
+      <p>Profession</p>
+      <div class="social-oti">
+        <img src="images/logo1.svg" alt="Facebook">
+        <img src="images/logo2.png" alt="Instagram">
+        <img src="images/logo3.jfif" alt="Twitter">
+      </div>
+    </div>
+    <div class="sabi">
+      <img src="images/ism6.jpg" alt="Doctor 1">
+      <h3>Julian Jameson</h3>
+      <p>Profession</p>
+      <div class="social-oti">
+        <img src="images/logo1.svg" alt="Facebook">
+        <img src="images/logo2.png" alt="Instagram">
+        <img src="images/logo3.jfif" alt="Twitter">
+      </div>
+    </div>
+    <div class="sabi">
+      <img src="images/ism4.jpg" alt="Doctor 2">
+      <h3>Julian Jameson</h3>
+      <p>Profession</p>
+      <div class="social-oti">
+        <img src="images/logo1.svg" alt="Facebook">
+        <img src="images/logo2.png" alt="Instagram">
+        <img src="images/logo3.jfif" alt="Twitter">
+      </div>
+    </div>
+    <div class="sabi">
+      <img src="images/ism3.jpg" alt="Doctor 1">
+      <h3>Julian Jameson</h3>
+      <p>Profession</p>
+      <div class="social-oti">
+        <img src="images/logo1.svg" alt="Facebook">
+        <img src="images/logo2.png" alt="Instagram">
+        <img src="images/logo3.jfif" alt="Twitter">
+      </div>
+    </div> 
+    <!-- Shu tarzda boshqa kartalarni ham qo'shish mumkin -->
+  </div> <br><br>
+  <figcaption style="font-size: 130%; color: red; text-align: center;">Newsletter</figcaption><br>
+  <header style="text-align: center; font-size: 250%;"><b>JOIN US</b></header><br>
+  <main style="color: black; font-size: 130%; text-align: center;">Problemes trying to resolve the conflict between</main> <main style="color: black;font-size: 130%; text-align: center;">the two major realms of classical physics: Newtonian mechanics.</main>
+  <div style="text-align: center; margin-top: 20px;">
+    <label for="email" style="font-size: 16px; font-weight: bold; margin-right: 10px;">Your Email:</label>
+    <input 
+      type="email" 
+      id="email" 
+      placeholder="Enter your email" 
+      style="padding: 10px; font-size: 14px; border: 1px solid #ccc; border-radius: 5px; width: 250px;">
+    <button 
+      style="padding: 10px 20px; background-color: red; color: white; border: none; border-radius: 5px; font-size: 14px; cursor: pointer; margin-left: 10px;">
+      Subscribe
+    </button>
+   <table style="width: 100%; border-collapse: collapse; text-align: left;">
+    <tr>
+      <th>Company Info</th>
+      <th>Legal</th>
+      <th>Features</th>
+      <th>Resources</th>
+      <th>Get In Touch</th>
+      
+    </tr>
+    <tr>
+      <td>About Us</td>
+      <td>About Us</td>
+      <td>Business Marketing</td>
+      <td>iOS & Android</td>
+      <td>(480) 555-0103</td>
+    </tr>
+    <tr>
+      <td>Carrier</td>
+      <td>Carrier</td>
+      <td>User Analytics</td>
+      <td>Watch a Demo</td>
+      <td>4517 Washington Ave</td>
+    </tr>
+    <tr>
+      <td>We are hiring</td>
+      <td>We are hiring</td>
+      <td>Live Chat</td>
+      <td>Customers</td>
+      <td>debra.holt@example.com</td>
+    </tr>
+    <tr>
+      <td>Blog</td>
+      <td>Blog</td>
+      <td>Unlimited Support</td>
+      <td>API</td>
+      
+      <td></td>
+    </tr>
+  </table> <br><br>
+  </div>
+  
+<table style="width: 100%; border-collapse: collapse; text-align: left;">
+  <tr>
+    <th><div class="jasmina">
+      <div class="jassi">
+    <figcaption style="font-size: 150%;">With Love By Figmaland All Right Reserved.</figcaption>
+      </div></th>
+    <th>  <div class="jasmina"><div class="jassi">
+      <div class="social-mohi">
+       
+        <img src="images/logo2.png" alt="Instagram">
+        <img src="images/logo3.jfif" alt="Twitter">
+      </div>
+</div>
+    </th>
+    <tr> <br>
+</body>
+</html>
